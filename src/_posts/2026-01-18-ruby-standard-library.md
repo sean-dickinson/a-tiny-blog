@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Default and Bundled Gems"
+title: "The Structure of Ruby's Standard Library"
 date: 2026-01-18 15:36:40 -0500
 categories: Ruby
-description: A short dive into Ruby's standard library and the differences between default and bundled gems and why you sometime get warnings about them.
+description: Have you ever seen a warning about how a gem "will no longer be a part of the default gems"? If so, you might enjoy this short dive into Ruby's standard library and the differences between default and bundled gems.
 ---
 Have you ever come across a warning message like this when running a Ruby script?
 ```
