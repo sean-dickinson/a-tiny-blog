@@ -1,0 +1,9 @@
+.post-preview {
+    border: 1px solid var(--action-color);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+
+    & .post-preview__description {
+        max-width: 50ch;
+    }
+}

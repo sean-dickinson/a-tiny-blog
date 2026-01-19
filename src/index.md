@@ -3,10 +3,10 @@ layout: page
 title: Posts
 ---
 
-<ul>
+<ul class="post-list">
   <% collections.posts.each do |post| %>
     <li>
-      <a href="<%= post.relative_url %>"><%= post.data.title %></a>
+     <%= render PostPreview.new(post:) %>
     </li>
   <% end %>
 </ul>

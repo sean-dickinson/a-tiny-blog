@@ -2,7 +2,8 @@
 layout: post
 title: "Default and Bundled Gems"
 date: 2026-01-18 15:36:40 -0500
-categories: ruby
+categories: Ruby
+description: A short dive into Ruby's standard library and the differences between default and bundled gems and why you sometime get warnings about them.
 ---
 Have you ever come across a warning message like this when running a Ruby script?
 ```
