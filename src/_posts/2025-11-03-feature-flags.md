@@ -3,6 +3,7 @@ layout: post
 title:  "Feature Flags"
 date:   2025-11-03 19:04:11 -0500
 categories: php ruby
+published: false
 ---
 Feature flags allow customizing what code is run based on various conditions such as the environment, the current user, or whatever you like.
 In psuedo-code, a feature flag could like this:
@@ -93,4 +94,3 @@ The only problem is that this tool is a Ruby gem called [Flipper](https://github
 
 Flipper provides a simple way to define feature flags, and then manage them via a provided UI. They more recently added a cloud offering which allows you to optionally sync feature flag states between environments, which is nice but honestly not a requirement for my use case.
 
-## Let's rebuild Flipper's core feature set in Laravel 

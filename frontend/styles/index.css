@@ -1,84 +1,88 @@
 :root {
-  --body-background: #f2f2f2;
-  --body-color: #444;
-  --heading-color: black;
-  --action-color: #d64045;
+    --body-background: #1b0934;
+    --body-color: #dddddd;
+    --heading-color: #dcdcdc;
+    --action-color: #6923cc;
 }
 
 body {
-  background: var(--body-background);
-  color: var(--body-color);
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen",
+    background: var(--body-background);
+    color: var(--body-color);
+    font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     "Helvetica", "Arial", sans-serif;
-  margin: 0 8px;
-  font-size: 108%;
-  line-height: 1.5;
+    margin: 0 8px;
+    font-size: 108%;
+    line-height: 1.5;
 }
 
 a {
-  color: var(--action-color);
-  text-decoration: underline;
-  text-decoration-color: #ffb088;
+    color: var(--body-color);
+    transition: color 0.2s ease;
+
+    &:hover {
+        color: var(--action-color);
+    }
 }
 
 h1 {
-  margin: 1rem 0 3rem;
-  text-align: center;
-  font-weight: 900;
-  font-size: 2.5rem;
-  color: var(--heading-color);
-  line-height: 1.2;
+    margin: 1rem 0 3rem;
+    text-align: center;
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: var(--heading-color);
+    line-height: 1.2;
+
+    a {
+        text-decoration: none;
+    }
 }
 
 body > header {
-  margin: 1rem;
-  text-align: center;
+    margin: 1rem;
+    text-align: center;
 }
 
 body > header img {
-  display: inline-block;
-  width: 400px;
-  max-width: 100%;
+    display: inline-block;
+    width: 400px;
+    max-width: 100%;
 }
 
 body > nav ul {
-  margin: 2rem 0;
-  padding: 0;
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  font-size: 1.3rem;
-  font-weight: bold;
+    margin: 2rem 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 
 body > nav a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 main {
-  margin: 2rem auto 4rem;
-  max-width: 65rem;
-  min-height: calc(100vh - 200px);
-  padding: 25px 25px 50px;
-  background: white;
-  box-shadow: 2px 3px 3px #ddd;
-  border-radius: 3px;
+    margin: 2rem auto 4rem;
+    max-width: 65rem;
+    min-height: calc(100vh - 200px);
+    padding: 25px 25px 50px;
 
-  @media (max-width: 500px) {
-    padding: 16px 16px 50px;
-  }
+    @media (max-width: 500px) {
+        padding: 16px 16px 50px;
+    }
 }
 
 footer {
-  text-align: center;
-  margin-bottom: 4rem;
-  font-size: 1em;
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 1em;
 }
 
 hr {
-  border: none;
-  border-top: 2px dotted #bbb;
-  margin: 3rem 0;
+    border: none;
+    border-top: 2px dotted #bbb;
+    margin: 3rem 0;
 }

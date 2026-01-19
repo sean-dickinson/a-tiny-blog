@@ -1,11 +1,9 @@
 ---
+layout: post
 title: "Default and Bundled Gems"
 date: 2026-01-18 15:36:40 -0500
 categories: ruby
 ---
-
-# Default and Bundled Gems
-
 Have you ever come across a warning message like this when running a Ruby script?
 ```
 warning: logger was loaded from the standard library, but will no longer be part of the default gems starting from Ruby 3.5.0.
