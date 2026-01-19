@@ -1,0 +1,23 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+title = ARGV[0] || nil
+if title.nil? || title.strip.empty?
+  puts "Usage: new_post \"Post Title\""
+  exit 1
+end
+
+slug = title.downcase.gsub(" ", '-')
+current_date = Time.now.strftime("%Y-%m-%d")
+filename = "#{current_date}-#{slug}.md"
+filepath = File.join("src", "_posts", filename)
+  File.open(filepath, "w") do |file|
+    file.puts("---")
+    file.puts("layout: post")
+    file.puts("title: \"#{title}\"")
+    file.puts("date: #{Time.now.strftime("%Y-%m-%d %H:%M:%S %z")}")
+    file.puts("tags: []")
+    file.puts("categories: []")
+    file.puts("---")
+    file.puts("")
+  end
